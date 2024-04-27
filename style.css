@@ -1,0 +1,284 @@
+body,
+html {
+  padding: 0px;
+  margin: 0px;
+  background-color: white;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.top-section-wrapper {
+  background-color: #001d37;
+  padding-left: 16px;
+  padding-right: 16px;
+  overflow: hidden;
+}
+
+.top-section {
+  color: white;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  max-width: 1066px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.top-section h1 {
+  font-size: 4rem;
+  margin: 0;
+  line-height: 97.3%;
+  max-width: 525px;
+}
+
+.actual-top-content {
+  z-index: 2;
+  position: relative;
+}
+
+.intro-text {
+  font-size: 1.25rem;
+  line-height: 169.3%;
+  margin: 1rem 0;
+  max-width: 435px;
+}
+
+.our-btn {
+  display: inline-block;
+  font-size: 1.125rem;
+  font-weight: 600;
+  background-color: #475aff;
+  border-radius: 72px;
+  padding: 14px 40px;
+  color: white;
+  text-decoration: none;
+  border: solid 2px #475aff;
+  transition: background-color 0.5s ease-out, border 0.5s ease-out,
+    color 0.3s ease-out;
+}
+
+.our-btn:hover {
+  background-color: #2e40e2;
+  border: solid 2px #2e40e2;
+}
+
+.intro-buttons {
+  margin-bottom: 70px;
+}
+
+.our-btn--outline {
+  background-color: transparent;
+  border: 2px solid white;
+}
+.our-btn--outline:hover {
+  background-color: white;
+  color: #475aff;
+  border: 2px solid white;
+}
+
+.utility-mr {
+  margin-right: 10px;
+}
+
+.intro-feature {
+  border: solid 1px rgba(255, 255, 255, 0.24);
+  padding: 33px 25px;
+}
+
+.intro-feature p {
+  margin: 0;
+  font-size: 1.0625rem;
+}
+
+.intro-feature h2 {
+  font-size: 1.5rem;
+  margin: 31px 0px 3px 0px;
+}
+
+.intro-features {
+  display: grid;
+  column-gap: 16px;
+  row-gap: 16px;
+}
+
+@media screen and (min-width: 580px) {
+  .intro-features {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .intro-features {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.circle {
+  width: 617px;
+  height: 617px;
+  background: #d660ff;
+  opacity: 0.85;
+  border-radius: 50%;
+  filter: blur(150px);
+  position: absolute;
+  top: 62px;
+  right: -390px;
+}
+.circle-two {
+  width: 617px;
+  height: 617px;
+  background: #6079ff;
+  opacity: 0.85;
+  border-radius: 50%;
+  filter: blur(150px);
+  position: absolute;
+  top: -365px;
+  left: -123px;
+}
+
+.page-section {
+  background-color: white;
+  padding: 80px 16px;
+}
+
+.page-section-inner {
+  max-width: 1066px;
+  margin: 0 auto;
+}
+
+.page-section-title {
+  font-size: 4rem;
+  line-height: 1;
+  margin: 0;
+}
+
+.pet-filter {
+  color: #9f9f9f;
+  font-size: 1.15rem;
+}
+
+.pet-filter button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.15rem;
+  font-family: "Source Sans 3", sans-serif;
+  color: #9f9f9f;
+}
+
+.site-footer p {
+  text-align: center;
+  color: #a6a6a6;
+  font-size: 0.875rem;
+  margin: 0;
+  padding: 0 0 65px 0;
+}
+
+.list-of-pets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  column-gap: 34px;
+  row-gap: 16px;
+}
+
+.pet-card {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  background-color: white;
+  border-radius: 1.25rem;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.08);
+  border: solid 1px #f3f3f3;
+  overflow: hidden;
+}
+
+.pet-card-photo {
+  order: 1;
+  grid-row: 1;
+}
+
+.pet-card-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.pet-card-text {
+  padding: 18px 16px;
+}
+
+.pet-card-text h3 {
+  font-size: 1.625rem;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+}
+
+.pet-description {
+  margin: 0 0 0.9rem 0;
+  color: #626262;
+  line-height: 150%;
+}
+
+.pet-card-age {
+  color: #a2a2a2;
+  font-size: 0.85rem;
+}
+
+@media screen and (min-width: 600px) {
+  .intro-buttons {
+    margin-bottom: 129px;
+  }
+
+  .top-section h1 {
+    font-size: 6.25rem;
+  }
+
+  .top-section {
+    padding-top: 139px;
+    padding-bottom: 139px;
+  }
+
+  .page-section {
+    background-color: white;
+    padding: 130px 16px;
+  }
+
+  .page-section-title {
+    font-size: 5.31rem;
+  }
+
+  .pet-filter {
+    font-size: 1.375rem;
+  }
+
+  .pet-filter button {
+    font-size: 1.375rem;
+  }
+
+  .list-of-pets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+    column-gap: 34px;
+    row-gap: 28px;
+  }
+
+  .pet-card-text {
+    padding: 21px 29px;
+  }
+
+  .pet-description {
+    margin: 0 0 1rem 0;
+    color: #626262;
+    line-height: 150%;
+  }
+  
+  .pet-card {
+    display: grid;
+    grid-template-columns: 165px 1fr;
+    background-color: white;
+    border-radius: 1.25rem;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.08);
+    border: solid 1px #f3f3f3;
+    overflow: hidden;
+  }
+}
