@@ -5,6 +5,10 @@ html {
   background-color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Source Sans 3", sans-serif;
 }
@@ -271,7 +275,7 @@ body {
     color: #626262;
     line-height: 150%;
   }
-  
+
   .pet-card {
     display: grid;
     grid-template-columns: 165px 1fr;
